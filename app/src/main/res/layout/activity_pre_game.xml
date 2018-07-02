@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:text="Choisissez la taille de la grille :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridSizeTitle" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="193dp" >
+
+        <RadioButton
+            android:text="3x3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/gridSize3"
+            android:duplicateParentState="false"
+            android:checked="true"
+            android:onClick="radioClick"/>
+
+        <RadioButton
+            android:text="4x4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/gridSize4"
+            android:duplicateParentState="false"
+            android:onClick="radioClick"/>
+
+        <RadioButton
+            android:text="5x5"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/gridSize5"
+            android:duplicateParentState="false"
+            android:onClick="radioClick"/>
+
+        <RadioButton
+            android:text="6x6"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/gridSize6"
+            android:duplicateParentState="false"
+            android:onClick="radioClick"/>
+
+    </RadioGroup>
+
+    <Button
+        android:text="C'est parti!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startGameButton"
+        android:layout_weight="0.00"
+        android:textAlignment="center"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:elevation="0dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="10dp"
+        android:onClick="startGameClick"/>
+
+</LinearLayout>
